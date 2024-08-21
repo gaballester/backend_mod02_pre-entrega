@@ -1,0 +1,30 @@
+{
+  "name": "backend_modulo_02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js",
+    "entregaDebug": "nodemon --inspect ./src/app.js"
+  },
+  "author": "Guillermo Ballester",
+  "license": "ISC",
+  "description": "![Logo](https://img.freepik.com/foto-gratis/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.jpg?t=st=1718159866~exp=1718163466~hmac=84f9c451acaf146addf530405c61d74e03db7af8a984689cef59b7c38f9c0625&w=1380) # CODERHOUSE - Programación Backend",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.5",
+    "mongoose-paginate-v2": "^1.8.2",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "socket.io": "^4.7.5"
+  }
+}

@@ -1,0 +1,80 @@
+<div id="productContainer"> </div>
+
+<div id="productContainerAdd" class="container">
+  <h3>Add new Product</h3>
+  <form class="form-horizontal" id="addProductForm">
+    <div class="row col-11 g-2 align-items-center">
+
+      <div class="col-auto">
+        <label for="code" class="col-form-label">Code</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" id="code" class="form-control form-control-sm" aria-describedby="Product code">
+      </div>
+
+      <div class="col-auto">
+        <label for="title" class="col-form-label">Title</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" id="title" class="form-control form-control-sm" aria-describedby="Product Title">
+      </div>
+
+      <div class="col-auto">
+        <label for="description" class="col-form-label">Description</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" id="description" class="form-control form-control-sm" aria-describedby="Product description">
+      </div>
+
+      <div class="col-auto">
+        <label for="price" class="col-form-label">Price</label>
+      </div>
+      <div class="col-auto">
+        <input type="number" id="price" class="form-control form-control-sm" aria-describedby="Product Price">
+      </div>
+
+      <div class="col-auto">
+        <label for="stock" class="col-form-label">Stock</label>
+      </div>
+      <div class="col-auto">
+        <input type="number" id="stock" class="form-control form-control-sm" aria-describedby="Product stock">
+      </div>
+
+      <div class="col-auto">
+        <label for="thumbnails" class="col-form-label">Thumbnails</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" id="thumbnails" class="form-control form-control-sm" aria-describedby="Product thumbnails">
+      </div>
+
+      <div class="col-auto">
+        <label for="category" class="col-form-label">Category</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" id="category" class="form-control form-control-sm" aria-describedby="Product category">
+      </div>      
+
+      <div class="col-auto">
+        <label for="status" class="col-form-label">Status</label>
+      </div>
+      <div class="col-auto">
+        <select id="status" class="form-select form-select-sm" aria-label="Small select example">
+          <option value="true" selected>Active</option>
+          <option value="false">Inactive</option>
+        </select>
+      </div>   
+             </div class="col-auto">
+          <button type="button" class="btn btn-primary" id="btnAddProd" >Save</button>
+      </div>   
+    </div>
+
+
+
+
+  </form>
+</div>
+
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="js/realTimeProducts.js"></script>

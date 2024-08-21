@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Product 03",
+    "description": "Product 03 description",
+    "price": 4000,
+    "thumbnails": [
+      "img3.1",
+      "img3.2",
+      "img3.3"
+    ],
+    "code": "A055",
+    "stock": 1200,
+    "status": true,
+    "category": "B"
+  },
+  {
+    "title": "Product 04",
+    "description": "Product 04 description",
+    "price": 3500,
+    "thumbnails": [
+      "img4.1",
+      "img4.2",
+      "img4.3"
+    ],
+    "code": "A056",
+    "stock": 800,
+    "status": true,
+    "category": "A"
+  },
+  {
+    "title": "Product 05",
+    "description": "Product 05 description",
+    "price": 2800,
+    "thumbnails": [
+      "img5.1",
+      "img5.2",
+      "img5.3"
+    ],
+    "code": "A057",
+    "stock": 1500,
+    "status": true,
+    "category": "C"
+  },
+  {
+    "title": "Product 06",
+    "description": "Product 06 description",
+    "price": 5000,
+    "thumbnails": [
+      "img6.1",
+      "img6.2",
+      "img6.3"
+    ],
+    "code": "A058",
+    "stock": 600,
+    "status": true,
+    "category": "B"
+  },
+  {
+    "title": "Product 07",
+    "description": "Product 07 description",
+    "price": 3200,
+    "thumbnails": [
+      "img7.1",
+      "img7.2",
+      "img7.3"
+    ],
+    "code": "A059",
+    "stock": 2000,
+    "status": true,
+    "category": "A"
+  },
+  {
+    "title": "Product 08",
+    "description": "Product 08 description",
+    "price": 4200,
+    "thumbnails": [
+      "img8.1",
+      "img8.2",
+      "img8.3"
+    ],
+    "code": "A060",
+    "stock": 900,
+    "status": true,
+    "category": "C"
+  },
+  {
+    "title": "Product 09",
+    "description": "Product 09 description",
+    "price": 3800,
+    "thumbnails": [
+      "img9.1",
+      "img9.2",
+      "img9.3"
+    ],
+    "code": "A061",
+    "stock": 1200,
+    "status": true,
+    "category": "B"
+  },
+  {
+    "title": "Product 10",
+    "description": "Product 10 description",
+    "price": 2900,
+    "thumbnails": [
+      "img10.1",
+      "img10.2",
+      "img10.3"
+    ],
+    "code": "A062",
+    "stock": 1800,
+    "status": true,
+    "category": "A"
+  },
+  {
+    "title": "Product 11",
+    "description": "Product 11 description",
+    "price": 4500,
+    "thumbnails": [
+      "img11.1",
+      "img11.2",
+      "img11.3"
+    ],
+    "code": "A063",
+    "stock": 700,
+    "status": true,
+    "category": "C"
+  },
+  {
+    "title": "Product 12",
+    "description": "Product 12 description",
+    "price": 3700,
+    "thumbnails": [
+      "img12.1",
+      "img12.2",
+      "img12.3"
+    ],
+    "code": "A064",
+    "stock": 1500,
+    "status": true,
+    "category": "B"
+  },
+  {
+    "title": "Product 13",
+    "description": "Product 13 description",
+    "price": 3100,
+    "thumbnails": [
+      "img13.1",
+      "img13.2",
+      "img13.3"
+    ],
+    "code": "A065",
+    "stock": 1000,
+    "status": true,
+    "category": "A"
+  },
+  {
+    "title": "Product 14",
+    "description": "Product 14 description",
+    "price": 4800,
+    "thumbnails": [
+      "img14.1",
+      "img14.2",
+      "img14.3"
+    ],
+    "code": "A066",
+    "stock": 500,
+    "status": true,
+    "category": "C"
+  },
+  {
+    "title": "Product 15",
+    "description": "Product 15 description",
+    "price": 2600,
+    "thumbnails": [
+      "img15.1",
+      "img15.2",
+      "img15.3"
+    ],
+    "code": "A067",
+    "stock": 2000,
+    "status": true,
+    "category": "B"
+  },
+  {
+    "title": "Product 16",
+    "description": "Product 16 description",
+    "price": 3900,
+    "thumbnails": [
+      "img16.1",
+      "img16.2",
+      "img16.3"
+    ],
+    "code": "A068",
+    "stock": 1300,
+    "status": true,
+    "category": "A"
+  },
+  {
+    "title": "Product 17",
+    "description": "Product 17 description",
+    "price": 4300,
+    "thumbnails": [
+      "img17.1",
+      "img17.2",
+      "img17.3"
+    ],
+    "code": "A069",
+    "stock": 600,
+    "status": true,
+    "category": "C"
+  },
+  {
+    "title": "Product 18",
+    "description": "Product 18 description",
+    "price": 3000,
+    "thumbnails": [
+      "img18.1",
+      "img18.2",
+      "img18.3"
+    ],
+    "code": "A070",
+    "stock": 1700,
+    "status": true,
+    "category": "B"
+  },
+  {
+    "title": "Product 19",
+    "description": "Product 19 description",
+    "price": 3600,
+    "thumbnails": [
+      "img19.1",
+      "img19.2",
+      "img19.3"
+    ],
+    "code": "A071",
+    "stock": 1100,
+    "status": true,
+    "category": "A"
+  },
+  {
+    "title": "Product 20",
+    "description": "Product 20 description",
+    "price": 5000,
+    "thumbnails": [
+      "img20.1",
+      "img20.2",
+      "img20.3"
+    ],
+    "code": "A072",
+    "stock": 900,
+    "status": true,
+    "category": "C"
+  },
+  {
+    "title": "Product 21",
+    "description": "Product 21 description",
+    "price": 3200,
+    "thumbnails": [
+      "img21.1",
+      "img21.2",
+      "img21.3"
+    ],
+    "code": "A073",
+    "stock": 1500,
+    "status": true,
+    "category": "B"
+  },
+  {
+    "title": "Product 22",
+    "description": "Product 22 description",
+    "price": 2800,
+    "thumbnails": [
+      "img22.1",
+      "img22.2",
+      "img22.3"
+    ],
+    "code": "A074",
+    "stock": 1900,
+    "status": true,
+    "category": "A"
+  }
+]

@@ -1,0 +1,60 @@
+{{!-- <section class="vh-100">
+  <div class="container  h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="https://media.istockphoto.com/id/1468757785/es/foto/concepto-de-recursos-humanos-y-gesti%C3%B3n-el-empleado-debe-completar-el-formulario-de-encuesta-en.jpg?s=1024x1024&w=is&k=20&c=QsnpaKMuWzUwdHKcpYIa3_gPsql8_f8hvxsp0cAQykU="
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <h2>Register Form</h2>
+            <form action="/api/sessions/register" method="POST">
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="first_name" class="form-control form-control-lg" />
+                    <label class="form-label" for="first_name">First Name</label>
+                </div>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="last_name" class="form-control form-control-lg" />
+                    <label class="form-label" for="last_name">Last Name</label>
+                </div>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control form-control-lg" />
+                    <label class="form-label" for="email">Email address</label>
+                </div>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="password" id="password" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">Password</label>
+                </div>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="number" id="age" class="form-control form-control-lg" />
+                    <label class="form-label" for="age">Age</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block">Register</button>
+
+            </form>
+      </div>
+    </div>
+  </div>
+</section> --}}
+
+<h1> Registro de usuarios </h1>
+
+<form action="/api/sessions/register" method="POST">
+    <input type="text" name="fisrt_name" placeholder="fisrt_name" required>
+    <br><br>
+    <input type="text" name="last_name" placeholder="last_name" required>
+    <br><br>
+    <input type="password" name="password" placeholder="Contraseña" required>
+    <br><br>
+    <input type="text" name="email" placeholder="email" required>
+    <br><br>
+    <input type="number" name="age" placeholder="age" required>
+    <br><br>
+    <button type="submit"> Registrarse </button>
+</form>

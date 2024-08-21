@@ -1,0 +1,134 @@
+
+            <div class="container text-center">
+            <div class="row justify-content-md-center">
+                <h3>List all Products</h3>
+
+                <div class="col-1">
+                    <label for="page" class="col-form-label">Initial Page</label>
+                </div>
+                <div class="col-1">
+                    <input type="number" id="page" name="page" min="1" max="100" value="1">
+                </div>
+                <div class="col-1">
+                    <label for="limit" class="col-form-label">Rows/Page</label>
+                </div>
+                <div class="col-1">
+                    <select id="limit" class="form-select form-select-sm" aria-label="">
+                    <option value="5" >5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                    </select>
+                </div>      
+                <div class="col-1">
+                    <label for="category" class="col-form-label">Category</label>
+                </div>
+                <div class="col-1">
+                    <select id="category" class="form-select form-select-sm" aria-label="">
+                    <option value="All" selected>All</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    </select>
+                </div>                         
+                <div class="col-1">
+                    <label for="sort" class="col-form-label">Order By</label>
+                </div>
+                <div class="col-2">
+                    <select id="sort" class="form-select form-select-sm" aria-label="Small select example">
+                    <option value="" Selected>Without Order</option>
+                    <option value="desc">Higher Price</option>
+                    <option value="asc">Lower Price</option>
+                    </select>
+                </div>   
+                <div class="col-3">
+                    <input type="submit" onClick="routeSend()"/> 
+                </div>                   
+
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">stock</th>
+                            <th scope="col">Active</th>
+                            <th scope="col">Add to Cart</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="prod_list">
+                        {{#each payloads}}
+                            <tr>
+                                <td>{{this.code}}</td>
+                                <td>{{this.title}}</td>
+                                <td>{{this.description}}</td>
+                                <td>{{this.category}}</td>
+                                <td>{{this.price}}</td>
+                                <td>{{this.stock}}</td>
+                                <td>{{this.status}}</td>
+                                <td><button class="btn btn-dark"  onclick="AddToCart('${this._id}')">AddToCart</button></td>
+                            </tr>                          
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="container text-center">
+                    {{#if hasPrevPage}}
+                    <a href="/api/products?page={{prevPage}}">Anterior</a>
+                    {{/if}}
+
+                    <span>Page {{currentPage}} of {{totalPages}}</span>
+
+                    {{#if hasNextPage}}
+                    <a href="/api/products?page={{nextPage}}">Siguiente</a>
+                    {{/if}}
+                </div>
+
+
+<script>
+
+    let limit = 10
+    let category = 'All'
+    let orderBy = 1
+    let page = 1
+    let sort ='' 
+    let ref = ''
+
+    const pageObj = document.getElementById('page')
+    pageObj.addEventListener('change', function () {
+        page = pageObj.value
+    });
+
+    const limitObj = document.getElementById('limit')
+    limitObj.addEventListener('change', function () {
+        limit = limitObj.value
+    });
+
+    const categoryObj = document.getElementById('category')
+    categoryObj.addEventListener('change', function () {
+        category = categoryObj.value
+    });
+
+    const sortObj = document.getElementById('sort')
+    sortObj.addEventListener('change', function () {
+        sort = sortObj.value
+    });
+
+    function routeSend() {
+        console.log("antes de llamar")
+        ref = `/api/products?page=${page}&limit=${limit}&sort=${sort}&category=${category}`
+        console.log('limit1',ref)
+        window.location.href=`${ref}` 
+    }
+
+  </script>
+
+
+
+
+
+    
+

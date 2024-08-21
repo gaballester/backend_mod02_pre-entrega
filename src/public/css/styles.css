@@ -1,0 +1,68 @@
+.contenedor {
+  height: 300px; /* Aquí puedes cambiar el valor para ajustar la altura según tus necesidades */
+}
+
+
+ /* Estilos para el título principal */
+
+/*
+
+table {
+  display: block;
+  height: 200px;
+  overflow-y: auto;
+}
+
+
+ 
+ body {
+  background: url('images/bg-jpg') rgba(0,0,0,0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ 
+ @media(max-width: 991px) {
+  .sidebar{
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+ }
+
+h1 {
+  color: blue;
+  font-size: 24px;
+  text-align: center;
+}
+
+#productContainer {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    display: block;margin-bottom:10px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+#btnAddProd {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color : blue;
+  color: white;
+  border: none;
+  cursor : pointer;
+} 
+  */
