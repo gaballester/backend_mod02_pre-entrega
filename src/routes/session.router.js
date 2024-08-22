@@ -1,9 +1,11 @@
 import { Router } from "express"
 import userModel from "../models/user.model.js"
+import CartManager  from "../dao/db/cart.manager.db.js"
 import { createHash,isValidPassword } from "../util/util.js"
 import jwt from  'jsonwebtoken'
 
 const userRouter = Router()
+const cartManager = new CartManager()
 
 userRouter.post("/register", async (req,res) => {
     const { email, password, first_name, last_name, age} = req.body
@@ -12,13 +14,15 @@ userRouter.post("/register", async (req,res) => {
         if (existsUser) {
             return res.status(400).send('Exists one user with this email')
         }
+        const newCart = await cartManager.addNewCart()
         const newUser = new userModel(
             {
                 email,
                 password: createHash(password),
                 first_name,
                 last_name,
-                age
+                age,
+                cartId: newCart._id
             }
         )
         await newUser.save()
@@ -29,7 +33,6 @@ userRouter.post("/register", async (req,res) => {
             maxAge: 3600000,
             httpOnly: true 
         })
-
         //res.redirect("api/sessions/current")
 
     } catch (error) {

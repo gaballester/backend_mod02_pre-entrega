@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+import mongoose, { isObjectIdOrHexString } from "mongoose"
 
 const userSchema = mongoose.Schema({
     first_name: {
@@ -26,6 +26,9 @@ const userSchema = mongoose.Schema({
         type: String,
         enum: ["admin","user"],
         default: "user"
+    },
+    cartId: {
+        type: String
     }
     
 })

@@ -9,7 +9,6 @@ import './database.js'
 import { productsRouter } from './routes/products.router.js'
 import { cartsRouter } from './routes/carts.router.js'
 import { viewsRouter } from './routes/views.router.js'
-import usersRouter from './routes/users.router.js'
 import sessionRouter from './routes/session.router.js'
 import cookieParser from 'cookie-parser'
 
@@ -37,7 +36,7 @@ app.use('/api/products', productsRouter)
 app.use('/api/carts', cartsRouter)
 app.use('/', viewsRouter)
 app.use('/api/sessions',sessionRouter)
-app.use('/api/users',usersRouter)
+
 
 const httpServer = app.listen(PORT,() => console.log(`Server listening in port ${PORT}`))
 

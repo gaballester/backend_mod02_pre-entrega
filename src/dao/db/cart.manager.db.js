@@ -122,5 +122,5 @@ class CartManager {
     
 }
 
-export { CartManager }
+export default  CartManager 
   
