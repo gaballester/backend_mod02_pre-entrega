@@ -10,6 +10,10 @@ viewsRouter.get("/register",(req,res) => {
     res.render("register")
 })
 
+viewsRouter.get("/current",(req,res) => {
+    res.render("current")
+})
+
 viewsRouter.get("/realtimeproducts", async (req,res) => {
     res.render('realtimeproducts')
 }
@@ -47,7 +51,7 @@ viewsRouter.get("/", async (req, res) => {
             totalPages: productsResult.totalPages
         })
 
-        res.render("home", arrayProducts)
+        //res.render("home", arrayProducts)
     } catch (error) {
         res.status(500).send("Internal Server Error rendering home hdlb"); 
     }

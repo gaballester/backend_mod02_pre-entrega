@@ -35,7 +35,7 @@ app.set("views","./src/views")
 app.use('/api/products', productsRouter)
 app.use('/api/carts', cartsRouter)
 app.use('/', viewsRouter)
-app.use('/api/sessions',sessionRouter)
+app.use('/api/sessions', sessionRouter)
 
 
 const httpServer = app.listen(PORT,() => console.log(`Server listening in port ${PORT}`))
