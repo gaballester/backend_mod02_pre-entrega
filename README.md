@@ -246,6 +246,6 @@ Permit register a new user to access in the site
 the site assign by default and user role USER, another role posible is ADMIN
 
 
-![Logo](./imagesMD/login.jpg)
+![Logo](./imagesMD/register.jpg)
 
 ## END
