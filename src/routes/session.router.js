@@ -8,13 +8,14 @@ import passport from "passport"
 const userRouter = Router()
 const cartManager = new CartManager()
 
+
 userRouter.get("/current", passport.authenticate("jwt", { session: false }), (req, res) => {
-    if (req.email) {
-        res.render("current", { email });
+    if (req.user) {
+        res.render("current", { email: req.user.email });
     } else {
-        res.status(401).send("Not authorized");
+        res.status(401).send("Not autorized");
     }
-});
+})
 
 userRouter.post("/register", async (req,res) => {
     const { email, password, first_name, last_name, age} = req.body
@@ -42,7 +43,7 @@ userRouter.post("/register", async (req,res) => {
             maxAge: 3600000,
             httpOnly: true 
         })
-        res.redirect("/current")
+        res.redirect("/api/sessions/current?email=" + newUser.email)
 
     } catch (error) {
         res.status(500).send("Internal Server Error")
@@ -67,16 +68,16 @@ userRouter.post("/login",async(req,res) => {
             httpOnly: true 
         })
         //res.render('current', { email });
-        res.redirect("/api/sessions/current")
+        res.redirect("/api/sessions/current?email=" + email)
 
     } catch (error) {
          res.status(401).send("Internal error Server")
     }
 })
 
-userRouter.post("/logout", (req,res)=> {
-    res.clearCookie("coderCookieToken")
-    res.redirect("/api/sessions/login")
+userRouter.post("/logout", (req, res) => {
+    res.clearCookie("coderCookieToken");
+    res.redirect("/login"); 
 })
 
 
