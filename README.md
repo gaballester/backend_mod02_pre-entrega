@@ -219,7 +219,8 @@ Shows all products available in the ecommerce site, and allows registration of n
 ### Login Page
 Permit the user login in the site
 ```http
-  POST /
+  route :  /api/sessions/login
+  method:  POST 
 ```
 | Parameter | Type     | Description                          |
 | :-------- | :------- | :----------------------------------- |
@@ -228,4 +229,23 @@ Permit the user login in the site
 
 ![Logo](./imagesMD/login.jpg)
 
-###End
+### Register Page
+Permit register a new user to access in the site
+```http
+  route :  /api/sessions/register
+  method:  POST 
+```
+| Parameter  | Type     | Description                          |
+| :--------  | :------- | :----------------------------------- |
+| first_name | text | user first name |
+| last_name  | text | user last name |
+| email   | text|user emeail |
+| password | password | user password |
+| age | number | user age |
+
+the site assign by default and user role USER, another role posible is ADMIN
+
+
+![Logo](./imagesMD/login.jpg)
+
+## END
