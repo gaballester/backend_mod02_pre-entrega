@@ -216,4 +216,16 @@ Shows all products available in the ecommerce site, and allows registration of n
 
 ![Logo](./imagesMD/realtimeproducts.jpg)
 
+### Login Page
+Permit the user login in the site
+```http
+  POST /
+```
+| Parameter | Type     | Description                          |
+| :-------- | :------- | :----------------------------------- |
+| email   | text|user emeail |
+| password | password | user password |
+
+![Logo](./imagesMD/login.jpg)
+
 ###End
